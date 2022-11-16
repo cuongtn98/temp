@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhiệt độ F <input type="text" oninput="inputTemp()" id="tempF" /> là  <span id="resultC"></span> </p>
+
+<script>
+    function temp(numb) {
+        let result = (numb - 32) /1.8 ;
+        return result ;
+    }
+    function inputTemp() {
+        let input = document.getElementById('tempF').value;
+        let result = temp(input);
+        document.getElementById('resultC').innerHTML =result + 'độ C ';
+    }
+
+</script>
+
+
+</body>
+</html>
